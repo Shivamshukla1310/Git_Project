@@ -1,0 +1,213 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, navy, #001f4d);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .nav-links a:hover {
+    background: #f1c40f;
+    color: navy;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 70px 20px;
+    background: linear-gradient(to right, #001f4d, navy, #001f4d);
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    color: #f8f9fa;
+  }
+  
+  /* About Section */
+  .about {
+    background: linear-gradient(to right, #f8f1e7, #fffcf7);
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+  }
+  
+  /* Services Section */
+  .services {
+    background: linear-gradient(to bottom, #f8f9fa, #fffcf7);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    animation: fadeInTeachers 3s ease-in-out;
+  }
+  
+  .teacher {
+    text-align: center;
+    max-width: 200px;
+    opacity: 0;
+    animation: showOneByOne 1s ease-in-out forwards;
+  }
+  
+  .teacher:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .teacher:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  .teacher:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .teacher:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  .teacher:nth-child(5) {
+    animation-delay: 2s;
+  }
+  
+  .teacher:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teacher img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .teacher h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: navy;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: linear-gradient(to top, navy, #001f4d);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #001f4d;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInTeachers {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes showOneByOne {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

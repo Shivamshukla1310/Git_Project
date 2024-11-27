@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    background: linear-gradient(to bottom, #fffaf0, #e0f7fa);
+    scroll-behavior: smooth;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: linear-gradient(to right, #f7e8c8, #b3e5fc);
+    color: navy;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    animation: slideInFromLeft 1.5s ease-out;
+  }
+  
+  /* About Details Section */
+  .about-details {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background: #ffffffcc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .about-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007acc;
+  }
+  
+  .intro,
+  .extras {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0 30px;
+  }
+  
+  /* Course Items */
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeInCourses 2s ease-in-out;
+  }
+  
+  .course-item {
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #f7e8c8, #e0f7fa);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .course-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .course-item h3 {
+    font-size: 1.5rem;
+    color: navy;
+    margin-bottom: 10px;
+  }
+  
+  .course-item p {
+    font-size: 1rem;
+    color: #34495e;
+    line-height: 1.5;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background: #004d73;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Animations */
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInCourses {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
